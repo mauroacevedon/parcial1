@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header{
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: end;
+}
+.contenedor-destacados{
+    padding: 1em;
+}
+.carro-tarjeta-general{
+    width: 400px;
+    border: 1px solid  rebeccapurple;
+}
+.img-car-portada{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
