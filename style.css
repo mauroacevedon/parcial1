@@ -1,4 +1,64 @@
-body {
+
+:root {
+    --primary-color: #000;
+    --primary-color-highligth:#fe8704;
+    --bs-body-bg:#fbf0f6;
+    --bs-body-font-family:'Urbanist', sans-serif;
+}
+
+
+.header {
+    font-family: 'Syne', sans-serif;
+    background-color: black;
+    z-index: 2;
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#181818;
+    padding-top:10%;
+    list-style-type: none;
+    z-index: 3;
+}
+
+.collapse-menu{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+}
+.collapse-menu span{
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+.collapse-menu div{
+    /* border: 1px solid #000; */
+    padding-bottom: 2rem;
+}
+.closeNavBtn{
+    
+}
+
+/* estilos para el hero section */
+.hero-section {
+    background-image: url('/imagenes/suv-img-header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    position: relative;
+    color: white;
+    z-index: 1;
+}
+
+/* body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -30,4 +90,4 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
-}
+} */
