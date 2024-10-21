@@ -49,6 +49,7 @@
 
 /* estilos para el hero section */
 .hero-section {
+    font-family: 'Syne', sans-serif;
     background-image: url('/imagenes/suv-img-header.jpg');
     background-size: cover;
     background-position: center;
@@ -56,38 +57,70 @@
     position: relative;
     color: white;
     z-index: 1;
+    padding-bottom: 5%;
+}
+.hero-section .btn-primary{
+    background-color: white;
+    border-color: whitesmoke;
+    color: black;
 }
 
-/* body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+/* estilos para seccion tarjetas */
+.titulo-seccion-cards{
+    font-family: 'Syne' sans-serif;
+    font-size: 2em;
+    padding-bottom: 2%;
+}
+.contenedor-titulo-cards{
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-.header{
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
+.contenedor-tarjetas{
     display: flex;
-    justify-content: space-between;
+    gap: 2%;
+    flex-wrap: wrap;
 }
-.nav{
+.card{
+ border-radius: 30px;   
+}
+/* no se aplica el borde, corregir mas adelante  */
+
+/* estilos para el contendor full width */
+.contenedor-2colms-big{
     display: flex;
-    gap: 5%;
-    align-items: center;
-    justify-content: end;
 }
-.contenedor-destacados{
-    padding: 1em;
+.text-content{
+    font-family: 'Syne' sans-serif;
 }
-.carro-tarjeta-general{
-    width: 400px;
-    border: 1px solid  rebeccapurple;
+.bg-cover-left {
+    background-image: url('/imagenes/semi-nuevos-bg2.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 500px; 
+    color: white;
 }
-.img-car-portada{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-} */
+
+.bg-cover-right {
+    background-image: url('/imagenes/remates-bg2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+}
+
+.bg-cover-left,
+.bg-cover-right {
+    color: white;
+    text-align: center; 
+    justify-content: center;
+}
+
+
+.footer1{
+    background-color: #181818;
+}
+.footer-text{
+    font-family: 'Syne', sans-serif;
+}
+

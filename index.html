@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEMO CarShowroom</title>
     <link rel="stylesheet" href="style.css">
+
     <!-- boostrap css en head -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -71,24 +72,101 @@ data-bs-target="#navbar" aria-expanded="false" aria-label="Togglenavigation">
 </button>
 
 </nav>
+<!-- boton cierre navbar fin-->
 
     <!-- hero section empieza-->
-<div class="hero-section d-flex align-items-center justify-content-center text-center">
+<div class="hero-section d-flex align-items-end justify-content-center text-center">
     <div class="hero-content">
-        <h1 class="hero-title">Título Principal</h1>
-        <p class="hero-subtitle">Este es el subtítulo descriptivo de la sección.</p>
-        <a href="#" class="btn btn-primary">Llamada a la acción</a>
+        <h1 class="hero-title">Tu nuevo vehiculo lo encuentras aquí</h1>
+        <p class="hero-subtitle">Compralo nuevo, usado o en remate.</p>
+        <a href="#" class="btn btn-dark">Ver más</a>
     </div>
 </div>
     <!-- hero section termina-->
 
+    <!-- seccion de tarjetas inicio -->
+     <!-- contenedor del titulo de la seccion de tarjetas -->
+     <div class="container-md contenedor-titulo-cards">
+        <div>
+            <h4 class="titulo-seccion-cards">Vehiculos Destacados</h4>
+        </div>
+        <!-- contenedor para las tarjetas inicio-->
+        <div class="container-lg contenedor-tarjetas">
+            <div class="card card-car" style="width: 18rem;">
+                <img src="/imagenes/1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nombre del Carro</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+    
+              <div class="card card-car" style="width: 18rem;">
+                <img src="/imagenes/6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nombre del Carro</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+
+              <div class="card card-car" style="width: 18rem;">
+                <img src="/imagenes/3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nombre del Carro</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+
+              <div class="card card-car" style="width: 18rem;">
+                <img src="/imagenes/5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nombre del Carro</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            <!-- contenedor para las tarjetas fin-->
+        </div>
+       
+     </div>
+    <!-- seccion de tarjetas fin-->
+
+    <!-- seccion contenedor full width inicio-->
+    <div class="container-fluid px-0 contenedor-2colms-big">
+        <div class="row gx-0"></div>
+        <!-- gx son los paddings entre las columnas -->
+        <div class="col-md-6 bg-cover-left d-flex align-items-center">
+            <!-- defino la columna de 6 para que la siguiente tambien ocupe 6 de 12, desde bostrap le doy el img cover y alineo los items al centro -->
+            <div class="text-content">
+                <h6 class="col-subtitle">Vehiculos</h6>
+                <h2 class="col-title">Semi-Nuevos</h2>
+            </div>
+        </div>
+        <div class="col-md-6 bg-cover-right d-flex align-items-center">
+            <div class="text-content">
+                <h6 class="col-subtitle">Remates</h6>
+                <h2 class="col-title">Compra ahora</h2>
+            </div>
+        </div>
+
+    </div>
+<!-- seccion contenedor full width fin-->
+
+
+    <footer class="footer1 text-white text-center py-3">
+        <!-- py es el padding en eje en boostrap -->
+        <p class="footer-text">Demo CarShowroom | Hecho por Mauro Acevedo | Parcial 1</p>
+    </footer>
+
+
     <script src="index.js"></script>
-
-
     <!-- Script de boostrap para llamar librerias -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
+
 
 </html>
