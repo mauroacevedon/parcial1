@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo CarShowroom Detail Car</title>
+    <link rel="stylesheet" href="detail-style.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- boostrap css en head -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fuente Urbanist de Google Fonts en todos los pesos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Fuente syne para titulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&family=Urbanist:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- cabecera seccion empieza aqui -->
+
+    <!-- logo en texto -->
+    <header class="header p-4 position-absolute start-0 top-0 end-0">
+        <div class="d-flex justify-content-between aling-items-center">
+            <a href="/" class="text-decoration-none text-white fs-3 fw-bold">CarShowroom</a>
+
+            <!-- menu hamburgesa -->
+            <div>
+                <!-- el aria-expanded se declara false para que este cerrado el boton por defecto -->
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Togglenavigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </header>
+    <!-- cabecera seccion termina aqui -->
+
+
+    <!-- menu desplegable empieza aqui -->
+    <!-- el colapso se la navbar se realiza con la clase de boostrap declarada en la class del nav  -->
+    <nav class="collapse navbar-collapse dropdown-nav" id="navbar">
+        <div class="collapse-menu">
+            <div><span>Destacados</span></div>
+            <div><span>Remates</span></div>
+            <div><span>Electricos</span></div>
+            <div><span>Obten la App</span></div>
+            <div><span>Contacto</span></div>
+        </div>
+        <!-- boton cierre navbar inicio-->
+        <button class="navbar-toggler text-white closeNavBtn" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbar" aria-expanded="false" aria-label="Togglenavigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x-lg"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+            </svg>
+        </button>
+
+    </nav>
+    <!-- boton cierre navbar fin-->
+
+    <!-- slider carrusel inicio -->
+    <div class="contenedor-carrusel">
+        <div id="carouselFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/imagenes/detail/c1.jpg" class="d-block w-100" alt="Img1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/detail/c2.jpg" class="d-block w-100" alt="Img2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/detail/c3.jpg" class="d-block w-100" alt="Img3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- slider carrusel fin -->
+
+<!-- seccion-detalles-contacto inicio -->
+<div class="container-fluid px-0 contenedor-2colms-md">
+    <div class="row seccion1-detalles">
+        <div class="col-md-9">
+            <h3>Nombre del vehiculo</h3>
+            <h4>Referencia | (año)</h4>
+            <span>$000.000.000</span>
+            <div class="container-md">
+                <div class="contenedor-icon-detalle">
+                    <img class="icon-detalle" src="/PNG-iconos-car/gas-tank.png" alt="gastank">
+                    <span>Gasolina</span>
+                </div>
+                <div class="contenedor-icon-detalle">
+                    <img class="icon-detalle" src="/PNG-iconos-car/shift.png" alt="gastank">
+                    <span>Automatico</span>
+                </div>
+            </div>
+            
+           
+        </div>
+
+        <div class="col-md-3">
+            <!-- insertar formulario en v2 -->
+            <button type="button" class="btn btn-success">Contactar Ahora</button>
+        </div>
+
+    </div>
+<!-- seccion-detalles-contacto fin -->
+
+<!-- seccion de tarjetas inicio -->
+     <!-- contenedor del titulo de la seccion de tarjetas -->
+     <div class="container-md contenedor-titulo-cards">
+        <div>
+            <h4 class="titulo-seccion-cards">Vehiculos relacionados</h4>
+        </div>
+
+      <!-- contenedor para las tarjetas inicio-->
+      <div class="container-lg contenedor-tarjetas">
+        <div class="card card-car" style="width: 18rem;">
+            <img src="/imagenes/1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nombre del Carro</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-dark">Comprar</a>
+            </div>
+          </div>
+
+          <div class="card card-car" style="width: 18rem;">
+            <img src="/imagenes/6.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nombre del Carro</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-dark">Comprar</a>
+            </div>
+          </div>
+
+          <div class="card card-car" style="width: 18rem;">
+            <img src="/imagenes/3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nombre del Carro</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-dark">Comprar</a>
+            </div>
+          </div>
+
+          <div class="card card-car" style="width: 18rem;">
+            <img src="/imagenes/5.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nombre del Carro</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-dark">Comprar</a>
+            </div>
+          </div>
+        <!-- contenedor para las tarjetas fin-->
+    </div>
+   
+ </div>
+<!-- seccion de tarjetas fin-->
+
+
+
+    <footer class="footer1 text-white text-center py-3">
+        <!-- py es el padding en eje en boostrap -->
+        <p class="footer-text">Demo CarShowroom | Hecho por Mauro Acevedo | Parcial 1</p>
+    </footer>
+
+
+
+    <script src="index.js"></script>
+
+    <!-- Script de boostrap para llamar librerias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

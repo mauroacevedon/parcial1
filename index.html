@@ -1,64 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi consecionario App</title>
+    <title>DEMO CarShowroom</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <!-- boostrap css en head -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fuente Urbanist de Google Fonts en todos los pesos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Fuente syne para titulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-    <div class="header">
-        <h1>Mi consecionario</h1>
-        <div class="nav">
-            <span>Destacados</span>
-            <span>Remates</span>
-            <span>Asesoria</span>
-        </div>
-    </div>
-    <div class="contenedor-principal">
-        <div class="contenedor-destacados">
-            <h2>Vehículos destacados</h2>
-            <!-- Esta es la tarjeta v1 se debe mejorar -->
-            <div class="carro-tarjeta-general">
-                <div class="carro-imagen">
-                    <img class="img-car-portada" src="https://autolab.com.co/wp-content/uploads/2021/07/volkswagen-escarabajo.jpg" alt="portada-carro-tarjeta">
-                </div>
-                <div class="carro-contenido">
-                    <div class="carro-año"></div>
-                    <div class="carro-estrellas"></div>
-                    <h4> <a href="">Nombre del Carro</a></h4>
-                    <h6>$000.000.000 <span>/ Negociable</span></h6>
-                </div>
-                <div class="carro-iconos">
-                    <div class="detalle-combustible">
-                        <i class="fa-regular fa-gas-pump"></i>
-                        <span>Gasolina</span>
-                    </div>
-                    <div class="detalle-puertas">
-                        <i class="fa-regular fa-car-side"></i>
-                        <span>4 Puertas</span>
-                    </div>
 
-                    <ul>Combutible: <span class="carro-combustible-detalle">Gasolina</span> </ul>
-                    <ul>Puertas: <span class="carro-puertas-detalle">5</span> </ul>
-                    <ul>Tipo: <span class="carro-tipo-detalle">Automatico</span> </ul>
-            
+    <!-- cabecera seccion empieza aqui -->
 
-                </div>
+    <!-- logo en texto -->
+    <header class="header p-4 position-absolute start-0 top-0 end-0">
+        <div class="d-flex justify-content-between aling-items-center">
+            <a href="/" class="text-decoration-none text-white fs-3 fw-bold">CarShowroom</a>
+
+            <!-- menu hamburgesa -->
+            <div>
+                <!-- el aria-expanded se declara false para que este cerrado el boton por defecto -->
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Togglenavigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
             </div>
-        <!-- aqui estará el scrip de los vehiculos destacados -->
         </div>
-        <div class="contedor-remates">
-            <h2>Vehículos en remate</h2>
-            <!-- aqui estara el scrip de los vehiculos remate -->
+        <div>
+
         </div>
+    </header>
+    <!-- cabecera seccion termina aqui -->
+
+    <!-- menu desplegable empieza aqui -->
+     <!-- el colapso se la navbar se realiza con la clase de boostrap declarada en la class del nav  -->
+<nav class="collapse navbar-collapse dropdown-nav" id="navbar">
+<div class="collapse-menu">
+    <div><span>Destacados</span></div>
+    <div><span>Remates</span></div>
+    <div><span>Electricos</span></div>
+    <div><span>Obten la App</span></div>
+    <div><span>Contacto</span></div>
+</div>
+<!-- boton cierre navbar -->
+<button class="navbar-toggler text-white closeNavBtn" type="button" data-bs-toggle="collapse"
+data-bs-target="#navbar" aria-expanded="false" aria-label="Togglenavigation">
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+  </svg>
+</button>
+
+</nav>
+<!-- boton cierre navbar fin-->
+
+    <!-- hero section empieza-->
+<div class="hero-section d-flex align-items-end justify-content-center text-center">
+    <div class="hero-content">
+        <h1 class="hero-title">Tu nuevo vehiculo lo encuentras aquí</h1>
+        <p class="hero-subtitle">Compralo nuevo, usado o en remate.</p>
+        <a href="#" class="btn btn-dark">Ver más</a>
     </div>
-    <div class="footer">
-        <span>2024 Mi consecionario</span>
+</div>
+    <!-- hero section termina-->
+
+    <!-- seccion de tarjetas inicio -->
+     <!-- contenedor del titulo de la seccion de tarjetas -->
+     <div class="container-md contenedor-titulo-cards">
+        <div>
+            <h4 class="titulo-seccion-cards">Vehiculos Destacados</h4>
+        </div>
+        <!-- contenedor para las tarjetas inicio-->
+        <div class="container-lg contenedor-tarjetas">
+            <div class="card card-car" style="width: 18rem;">
+                <img src="/imagenes/1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nombre del Carro</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="detalle-car.html" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+    
+              <div class="card card-car" style="width: 18rem;">
+                <img src="/imagenes/6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nombre del Carro</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="detalle-car.html" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+
+              <div class="card card-car" style="width: 18rem;">
+                <img src="/imagenes/3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nombre del Carro</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="detalle-car.html" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+
+              <div class="card card-car" style="width: 18rem;">
+                <img src="/imagenes/5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nombre del Carro</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="detalle-car.html" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            <!-- contenedor para las tarjetas fin-->
+        </div>
+       
+     </div>
+    <!-- seccion de tarjetas fin-->
+
+    <!-- seccion contenedor full width inicio-->
+    <div class="container-fluid px-0 contenedor-2colms-big">
+        <div class="row gx-0"></div>
+        <!-- gx son los paddings entre las columnas -->
+        <div class="col-md-6 bg-cover-left d-flex align-items-center">
+            <!-- defino la columna de 6 para que la siguiente tambien ocupe 6 de 12, desde bostrap le doy el img cover y alineo los items al centro -->
+            <div class="text-content">
+                <h6 class="col-subtitle">Vehiculos</h6>
+                <h2 class="col-title">Semi-Nuevos</h2>
+            </div>
+        </div>
+        <div class="col-md-6 bg-cover-right d-flex align-items-center">
+            <div class="text-content">
+                <h6 class="col-subtitle">Remates</h6>
+                <h2 class="col-title">Compra ahora</h2>
+            </div>
+        </div>
+
     </div>
+<!-- seccion contenedor full width fin-->
+
+
+    <footer class="footer1 text-white text-center py-3">
+        <!-- py es el padding en eje en boostrap -->
+        <p class="footer-text">Demo CarShowroom | Hecho por Mauro Acevedo | Parcial 1</p>
+    </footer>
+
 
     <script src="index.js"></script>
+    <!-- Script de boostrap para llamar librerias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
+
 </html>

@@ -1,0 +1,22 @@
+.carousel-item img {
+    max-height: 700px; 
+    object-fit: cover; 
+    width: 100%; 
+}
+.seccion1-detalles{
+    font-family: 'Syne', sans-serif;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10%;
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.icon-detalle {
+    width: 2%;
+}
+.contenedor-icon-detalle {
+    align-items: center;
+    padding: 1%;
+}
