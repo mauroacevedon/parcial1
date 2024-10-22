@@ -10,6 +10,13 @@
     justify-content: center;
     padding: 10%;
     background-color: #f5f5f5;
-    color: #508375;
+    color: black;
 }
 
+.icon-detalle {
+    width: 2%;
+}
+.contenedor-icon-detalle {
+    align-items: center;
+    padding: 1%;
+}
